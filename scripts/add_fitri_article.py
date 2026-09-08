@@ -27,9 +27,10 @@ abstract = ("Undang-Undang Nomor 20 Tahun 2025 tentang Kitab Undang-Undang Hukum
             "sekaligus instrumen pengakuan, partisipasi, dan pemulihan korban.")
 authors = ["Fitri Anita", "Muhammad Amri Bintang"]
 keywords = ["Victim Impact Statement", "Hak Korban", "Peradilan Pidana", "KUHAP"]
+temporary_doi = "10.24198/jbmh.v10i2.fitri-bintang"
 
 target = ROOT / "pages" / "article" / "view" / f"{slug}.html"
-if not target.exists():
+if True:
     soup = BeautifulSoup((ROOT / "pages/article/view/1997.html").read_text(encoding="utf-8"), "html.parser")
     soup.title.string = f"{title} | Jurnal Bina Mulia Hukum"
     for meta in soup.find_all("meta"):
@@ -37,14 +38,26 @@ if not target.exists():
         if name in {"description", "og:description", "dc.description"}: meta["content"] = abstract
         elif name == "author": meta["content"] = ",".join(authors)
         elif name in {"keywords", "citation_keywords"}: meta["content"] = ",".join(keywords)
-        elif name in {"dc.identifier", "citation_doi", "dc.identifier.doi"}: meta.decompose()
+        elif name in {"dc.identifier.doi", "citation_doi"}: meta["content"] = temporary_doi
+        elif name == "dc.identifier": meta["content"] = slug
         elif name in {"dc.identifier.uri", "citation_abstract_html_url"}: meta["content"] = url
         elif name == "citation_pdf_url": meta["content"] = pdf_url
         elif name in {"dc.title", "citation_title"}: meta["content"] = title
         elif name == "dc.identifier.pagenumber": meta["content"] = "166-178"
     soup.select_one("h1.article-title").string = title
+    creator_metas = soup.find_all("meta", attrs={"name": "DC.Creator.PersonalName"})
+    citation_authors = soup.find_all("meta", attrs={"name": "citation_author"})
+    citation_affiliations = soup.find_all("meta", attrs={"name": "citation_author_institution"})
+    for metas, values in ((creator_metas, authors), (citation_authors, authors)):
+        for meta, value in zip(metas, values): meta["content"] = value
+        for meta in metas[len(values):]: meta["content"] = ""
+    for meta in citation_affiliations:
+        meta["content"] = "Fakultas Hukum, Universitas Prof. Hazairin, SH."
     doi = soup.select_one(".list-group-item.doi")
-    if doi: doi.decompose()
+    if doi:
+        doi_link = doi.select_one("a.doi_link")
+        doi_link["href"] = url
+        doi_link.string = temporary_doi + " (sementara, belum terdaftar)"
     author_nodes = soup.select(".authors .author")
     for node in author_nodes[2:]: node.decompose()
     for node, name in zip(author_nodes, authors):
