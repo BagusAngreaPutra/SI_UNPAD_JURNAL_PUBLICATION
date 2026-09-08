@@ -1,0 +1,16 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html/jurnal.fh.unpad-law.site/UNPAD/
+    - /bin/mkdir -p "$DEPLOYPATH"
+    - /bin/cp index.html "$DEPLOYPATH"
+    - /bin/cp home.html "$DEPLOYPATH"
+    - /bin/cp journal2.html "$DEPLOYPATH"
+    - /bin/cp journal.3.html "$DEPLOYPATH"
+    - /bin/cp peerreviewprocess.html "$DEPLOYPATH"
+    - /bin/cp reviewers.html "$DEPLOYPATH"
+    - /bin/cp -R About "$DEPLOYPATH"
+    - /bin/cp -R assets "$DEPLOYPATH"
+    - /bin/cp -R issue "$DEPLOYPATH"
+    - /bin/cp -R pages "$DEPLOYPATH"
+    - /bin/cp -R ojs "$DEPLOYPATH"

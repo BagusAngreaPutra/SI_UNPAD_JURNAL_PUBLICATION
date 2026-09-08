@@ -2,5 +2,6 @@
 /ojs/cache/
 __pycache__/
 .env
-.sql.gz
+*.sql
+*.sql.gz
 /cpanel-assets-fix.zip
