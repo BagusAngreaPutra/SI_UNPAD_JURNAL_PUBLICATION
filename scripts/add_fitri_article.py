@@ -28,6 +28,38 @@ abstract = ("Undang-Undang Nomor 20 Tahun 2025 tentang Kitab Undang-Undang Hukum
 authors = ["Fitri Anita", "Muhammad Amri Bintang"]
 keywords = ["Victim Impact Statement", "Hak Korban", "Peradilan Pidana", "KUHAP"]
 temporary_doi = "10.24198/jbmh.v10i2.1997"
+references = [
+    "Cruz, Peter de. Comparative Law in a Changing World. 4th ed. London: Routledge, 2020.",
+    "Hadjon, Philipus M. Perlindungan Hukum bagi Rakyat Indonesia. Surabaya: Bina Ilmu, 1987.",
+    "Hadjon, Philipus M., dan Tatiek Sri Djatmiati. Argumentasi Hukum. Yogyakarta: Gadjah Mada University Press, 2020.",
+    "Hall, Matthew. Victims of Crime: Policy and Practice in Criminal Justice. New York: Routledge, 2022.",
+    "Honneth, Axel. The Struggle for Recognition. Cambridge: Polity Press, 1995.",
+    "Hutchinson, Terry. Researching and Writing in Law. 5th ed. Sydney: Thomson Reuters, 2021.",
+    "Ibrahim, Johnny. Teori dan Metodologi Penelitian Hukum Normatif. Malang: Bayumedia Publishing, 2019.",
+    "Indrati, Maria Farida. Ilmu Perundang-Undangan. Yogyakarta: Kanisius, 2023.",
+    "Karmen, Andrew. Crime Victims: An Introduction to Victimology. 10th ed. Boston: Cengage Learning, 2024.",
+    "Marshall, Tony F. Restorative Justice: An Overview. London: Home Office Research Development and Statistics Directorate, 1999.",
+    "Marzuki, Peter Mahmud. Penelitian Hukum. Edisi Revisi. Jakarta: Kencana, 2021.",
+    "Soeharto, H. Perlindungan Hak Tersangka, Terdakwa, dan Korban Tindak Pidana dalam Sistem Peradilan Pidana Indonesia. Bandung: Refika Aditama, 2007.",
+    "Wemmers, Jo-Anne. Victims in the Criminal Justice System. Leiden: Brill, 2023.",
+    "Batchelor, Diana. “Talking Punishment: How Victim Perceptions of Punishment Change When They Communicate with Offenders.” Punishment & Society Vol. 25, No. 2 (2023): 519-536.",
+    "Cassell, Paul G., dan Edna Erez. “How Victim Impact Statements Promote Justice: Evidence from the Content of Statements Delivered in Larry Nassar’s Sentencing.” Marquette Law Review Vol. 107, No. 4 (2024): 861.",
+    "Herman, dan Ufran. “Victim Impact Statement sebagai Instrumen Penguatan Hak Korban dalam Sistem Peradilan Pidana Indonesia.” Indonesian Journal of Criminal Law and Criminology Vol. 5, No. 2 (2024): 175-189.",
+    "Kragting, Marleen, Freya Augusteijn, Alice Bosma, Nieke Elbers, dan Antony Pemberton. “Victim Impact Statements in the Courtroom: Agency and Communion in Communication with Victims.” International Review of Victimology, OnlineFirst (2025). DOI: 10.1177/02697580251389013.",
+    "Laxminarayan, Malini, Mark Bosmans, Robert Porter, dan Lorena Sosa. “Victim Satisfaction with Criminal Justice: A Systematic Review.” Victims & Offenders Vol. 8, No. 2 (2013): 119-147.",
+    "Lens, Kim M.E., Antony Pemberton, dan Stefan Bogaerts. “Heterogeneity in Victim Participation: A New Perspective on Delivering a Victim Impact Statement.” European Journal of Criminology Vol. 10, No. 4 (2013): 479-495.",
+    "Lens, Kim M.E., Antony Pemberton, Karen Brans, Johan Braeken, Stefan Bogaerts, dan Esmah Lahlah. “Delivering a Victim Impact Statement: Emotionally Effective or Counter-Productive?” European Journal of Criminology Vol. 12, No. 1 (2015): 17-34.",
+    "Mastrocinque, Jeanna M. “Victim Personal Statements: An Analysis of Notification and Utilization.” Criminology & Criminal Justice Vol. 14, No. 2 (2014): 216-234.",
+    "Pemberton, Antony, Pauline G.M. Aarten, dan Eva Mulder. “Beyond Retribution, Restoration and Procedural Justice: The Big Two of Communion and Agency in Victims’ Perspectives on Justice.” Psychology, Crime & Law Vol. 23, No. 7 (2017): 682-698.",
+    "Ramadianto, Anang Riyan, Milda Istiqomah, dan Nurini Aprilianda. “Victim Impact Statement as a Model of Victim-Centered Justice.” Jurnal Hukum IUS QUIA IUSTUM Vol. 32, No. 2 (2025): 337-360.",
+    "Roberts, Julian V., dan Edna Erez. “Communication in Sentencing: Exploring the Expressive Function of Victim Impact Statements.” International Review of Victimology Vol. 10, No. 3 (2004): 223-244.",
+    "Susetyo, Heru. “Pemenuhan dan Perlindungan Hak-Hak Prosedural Korban Terorisme atas Victim Impact Statements dalam Sistem Peradilan Pidana.” The Southeast Asian Journal of Victimology Vol. 3, No. 1 (2024): 90-108.",
+    "Walklate, Sandra, JaneMaree Maher, Jude McCulloch, Kate Fitz-Gibbon, dan Kara Beavis. “Victim Stories and Victim Policy: Is There a Case for a Narrative Victimology?” Crime, Media, Culture Vol. 15, No. 2 (2019): 199-215.",
+    "Indonesia. Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana.",
+    "Indonesia. Undang-Undang Nomor 20 Tahun 2025 tentang Kitab Undang-Undang Hukum Acara Pidana.",
+    "Mahkamah Agung Republik Indonesia. Putusan Nomor 5642 K/Pid.Sus/2022.",
+    "United Nations. Declaration of Basic Principles of Justice for Victims of Crime and Abuse of Power. A/RES/40/34. New York: United Nations, 1985.",
+]
 
 target = ROOT / "pages" / "article" / "view" / f"{slug}.html"
 if True:
@@ -79,8 +111,16 @@ if True:
     if badge: badge.decompose()
     citation = soup.select_one(".csl-entry")
     if citation: citation.string = f"Anita, F., & Bintang, M. A. (2026). {title}. Jurnal Bina Mulia Hukum, 10(2), 166-178."
-    references = soup.select_one(".article-references")
-    if references: references.decompose()
+    reference_box = soup.select_one("#articleCitations > div")
+    if reference_box:
+        reference_box.clear()
+        for reference in references:
+            item = soup.new_tag("p"); item.string = reference; reference_box.append(item)
+    reference_list = soup.select_one(".article-references-content ol")
+    if reference_list:
+        reference_list.clear()
+        for reference in references:
+            item = soup.new_tag("li"); item.string = reference; reference_list.append(item)
     target.write_text(str(soup), encoding="utf-8", newline="\n")
 
 card = f'''\n<div class="article-summary media fitri-bintang-article">
