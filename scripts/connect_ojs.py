@@ -34,6 +34,11 @@ for path in public_html():
     updated = re.sub(r'href=(["\'])[^"\']*ojs/index\.php/jbmh/search\1',
                      lambda match: 'href=' + match.group(1) + search_target + match.group(1),
                      updated)
+    pdf_endpoint = os.path.relpath(ROOT / 'pdf.php', path.parent).replace('\\', '/')
+    updated = re.sub(
+        r'(?:\.\./)*ojs/index\.php/jbmh/article/(?:view|download)/([A-Za-z0-9._%-]+)/([A-Za-z0-9._%-]+)',
+        lambda match: pdf_endpoint + '?article=' + match.group(1) + '&amp;galley=' + match.group(2),
+        updated)
     updated = updated.replace('http://jurnal.fh.unpad.ac.id/index.php/jbmh/',
                               'https://jurnal.fh.unpad-law.site/UNPAD/')
     # Any remaining absolute JBMH URL is an online OJS service (PDF, feed,
