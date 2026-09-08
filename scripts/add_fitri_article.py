@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
-source_pdf = ROOT / "Artikel_Fitri_dan_Bintang_Format_JBMH.pdf"
+source_pdf = ROOT / "Artikel_Fitri_&_Bintang_JBMH.pdf"
 pdf_dir = ROOT / "assets" / "pdfs"
 pdf_dir.mkdir(parents=True, exist_ok=True)
 pdf_target = pdf_dir / "Artikel_Fitri_dan_Bintang_JBMH.pdf"
