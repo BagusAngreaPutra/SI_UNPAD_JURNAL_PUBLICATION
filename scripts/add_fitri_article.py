@@ -80,11 +80,14 @@ if True:
     creator_metas = soup.find_all("meta", attrs={"name": "DC.Creator.PersonalName"})
     citation_authors = soup.find_all("meta", attrs={"name": "citation_author"})
     citation_affiliations = soup.find_all("meta", attrs={"name": "citation_author_institution"})
+    subject_metas = soup.find_all("meta", attrs={"name": "DC.Subject"})
     for metas, values in ((creator_metas, authors), (citation_authors, authors)):
         for meta, value in zip(metas, values): meta["content"] = value
         for meta in metas[len(values):]: meta["content"] = ""
     for meta in citation_affiliations:
         meta["content"] = "Fakultas Hukum, Universitas Prof. Hazairin, SH."
+    for meta, keyword in zip(subject_metas, keywords): meta["content"] = keyword
+    for meta in subject_metas[len(keywords):]: meta["content"] = ""
     doi = soup.select_one(".list-group-item.doi")
     if doi:
         doi_link = doi.select_one("a.doi_link")

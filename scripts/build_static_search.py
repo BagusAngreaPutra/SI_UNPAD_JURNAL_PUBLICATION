@@ -1,33 +1,38 @@
 """Build the static article search page and its browser-side index."""
 from html import escape
 from pathlib import Path
+from bs4 import BeautifulSoup
 import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def meta(text, name):
-    match = re.search(
-        r'<meta\s+(?:name|property)=["\']' + re.escape(name) +
-        r'["\']\s+content=["\'](.*?)["\']\s*/?>', text, re.I | re.S)
-    return re.sub(r'<[^>]+>', ' ', match.group(1)).strip() if match else ''
+def meta(soup, name):
+    tag = soup.find('meta', attrs={'name': re.compile(r'^' + re.escape(name) + r'$', re.I)})
+    if tag is None:
+        tag = soup.find('meta', attrs={'property': re.compile(r'^' + re.escape(name) + r'$', re.I)})
+    return str(tag.get('content', '')).strip() if tag else ''
 
 
 articles = []
 for path in sorted((ROOT / 'pages/article/view').glob('*.html')):
     text = path.read_text(encoding='utf-8', errors='ignore')
-    title = meta(text, 'citation_title') or meta(text, 'DC.Title')
+    soup = BeautifulSoup(text, 'html.parser')
+    title = meta(soup, 'citation_title') or meta(soup, 'DC.Title')
     if not title:
         continue
-    authors = re.findall(r'<meta\s+name=["\']citation_author["\']\s+content=["\'](.*?)["\']', text, re.I)
+    authors = [str(tag.get('content', '')).strip() for tag in soup.find_all(
+        'meta', attrs={'name': re.compile(r'^citation_author$', re.I)}) if tag.get('content')]
+    subjects = [str(tag.get('content', '')).strip() for tag in soup.find_all(
+        'meta', attrs={'name': re.compile(r'^DC.Subject$', re.I)}) if tag.get('content')]
     articles.append({
         'title': title,
         'authors': ', '.join(authors),
-        'doi': meta(text, 'citation_doi'),
-        'abstract': meta(text, 'DC.Description'),
-        'keywords': meta(text, 'DC.Subject'),
-        'url': path.relative_to(ROOT).as_posix(),
+        'doi': meta(soup, 'citation_doi'),
+        'abstract': meta(soup, 'DC.Description'),
+        'keywords': ', '.join(subjects),
+        'url': '/index.php/jbmh/article/view/' + path.stem,
     })
 
 (ROOT / 'assets/search-index.js').write_text(
