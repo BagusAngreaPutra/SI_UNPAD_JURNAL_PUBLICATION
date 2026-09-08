@@ -27,7 +27,7 @@ abstract = ("Undang-Undang Nomor 20 Tahun 2025 tentang Kitab Undang-Undang Hukum
             "sekaligus instrumen pengakuan, partisipasi, dan pemulihan korban.")
 authors = ["Fitri Anita", "Muhammad Amri Bintang"]
 keywords = ["Victim Impact Statement", "Hak Korban", "Peradilan Pidana", "KUHAP"]
-temporary_doi = "10.24198/jbmh.v10i2.fitri-bintang"
+temporary_doi = "10.24198/jbmh.v10i2.1997"
 
 target = ROOT / "pages" / "article" / "view" / f"{slug}.html"
 if True:
@@ -57,7 +57,7 @@ if True:
     if doi:
         doi_link = doi.select_one("a.doi_link")
         doi_link["href"] = url
-        doi_link.string = temporary_doi + " (sementara, belum terdaftar)"
+        doi_link.string = "https://doi.org/" + temporary_doi
     author_nodes = soup.select(".authors .author")
     for node in author_nodes[2:]: node.decompose()
     for node, name in zip(author_nodes, authors):
@@ -85,6 +85,7 @@ card = f'''\n<div class="article-summary media fitri-bintang-article">
   <div class="media-body article_summary">
     <h3 class="media-heading"><a href="{url}" class="article_name">{title}</a></h3>
     <div class="meta row">
+      <div class="col-md-12 col-xs-12 journal_index_doi"><span class="doi_logo"></span><a href="{url}" class="doi_link">{temporary_doi}</a></div>
       <div class="col-md-12 col-xs-12">
         <span class="pull-left pages"><i class="fa fa-file-text-o" aria-hidden="true"></i> <span class="page_number">166-178</span></span>
         <span class="pull-right author"><i class="fa fa-users"></i> Fitri Anita, Muhammad Amri Bintang</span>
