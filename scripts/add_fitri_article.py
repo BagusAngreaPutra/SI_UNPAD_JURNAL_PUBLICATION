@@ -11,7 +11,7 @@ pdf_target = pdf_dir / "Artikel_Fitri_dan_Bintang_JBMH.pdf"
 if source_pdf.exists():
     shutil.copy2(source_pdf, pdf_target)
 
-slug = "fitri-bintang"
+slug = "2534"
 url = f"/index.php/jbmh/article/view/{slug}"
 pdf_url = "/assets/pdfs/Artikel_Fitri_dan_Bintang_JBMH.pdf"
 title = ("Reformulasi Pengaturan Victim Impact Statement (VIS) sebagai Penguatan Hak "
@@ -144,6 +144,7 @@ card = f'''\n<div class="article-summary media fitri-bintang-article">
 </div>\n'''
 for listing in [ROOT / "index.html", ROOT / "home.html", ROOT / "pages/issue/view/143.html"]:
     text = listing.read_text(encoding="utf-8")
+    text = text.replace('/index.php/jbmh/article/view/fitri-bintang', url)
     if "fitri-bintang-article" not in text:
         text = text.replace('<div class="media-list">', '<div class="media-list">' + card, 1)
-        listing.write_text(text, encoding="utf-8", newline="\n")
+    listing.write_text(text, encoding="utf-8", newline="\n")
