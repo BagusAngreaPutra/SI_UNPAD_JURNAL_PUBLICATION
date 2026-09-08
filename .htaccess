@@ -1,0 +1,15 @@
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# Keep the public URLs compatible with the journal's former OJS addresses.
+RewriteRule ^index\.php/(?:JBMH|jbmh)/?$ index.html [L,NC]
+RewriteRule ^index\.php/jbmh/article/view/([^/]+)/?$ pages/article/view/$1.html [L,NC]
+RewriteRule ^index\.php/jbmh/issue/view/([^/]+)/?$ pages/issue/view/$1.html [L,NC]
+RewriteRule ^index\.php/jbmh/issue/archive/?$ issue/arcive.html [L,NC]
+RewriteRule ^index\.php/jbmh/search/?$ search.html [L,NC]
+
+# Serve every remaining static page without exposing the .html extension.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]

@@ -4,6 +4,7 @@ deployment:
     - export DEPLOYPATH=$HOME/public_html/jurnal.fh.unpad-law.site/UNPAD/
     - /bin/mkdir -p "$DEPLOYPATH"
     - /bin/cp index.html "$DEPLOYPATH"
+    - /bin/cp .htaccess "$DEPLOYPATH"
     - /bin/cp home.html "$DEPLOYPATH"
     - /bin/cp search.html "$DEPLOYPATH"
     - /bin/cp pdf.php "$DEPLOYPATH"
