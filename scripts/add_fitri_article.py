@@ -4,12 +4,12 @@ from bs4 import BeautifulSoup
 import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
-source_pdf = ROOT / "Artikel_Fitri_dan_Bintang_JBMH.pdf"
+source_pdf = ROOT / "Artikel_Fitri_dan_Bintang_Format_JBMH.pdf"
 pdf_dir = ROOT / "assets" / "pdfs"
 pdf_dir.mkdir(parents=True, exist_ok=True)
-pdf_target = pdf_dir / source_pdf.name
-if source_pdf.exists() and not pdf_target.exists():
-    shutil.move(source_pdf, pdf_target)
+pdf_target = pdf_dir / "Artikel_Fitri_dan_Bintang_JBMH.pdf"
+if source_pdf.exists():
+    shutil.copy2(source_pdf, pdf_target)
 
 slug = "fitri-bintang"
 url = f"/index.php/jbmh/article/view/{slug}"
