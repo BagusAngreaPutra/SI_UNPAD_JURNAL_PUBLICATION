@@ -73,6 +73,8 @@ if True:
     for keyword in keywords:
         span = soup.new_tag("span", attrs={"class": "keyword_item"}); span.string = keyword; keyword_box.append(span)
     galley = soup.select_one("a.galley-link.pdf"); galley["href"] = pdf_url
+    statistic_values = soup.select(".article-sidebar .galley_list b")
+    for value in statistic_values[:2]: value.string = "2"
     badge = soup.select_one(".dimension_badge")
     if badge: badge.decompose()
     citation = soup.select_one(".csl-entry")
@@ -93,6 +95,7 @@ card = f'''\n<div class="article-summary media fitri-bintang-article">
     </div>
     <div class="row">
       <div class="col-md-8 col-xs-12"><a class="galley-link pdf" href="{pdf_url}"><span class="gallery_item_link"><i class="fa fa-paperclip"></i> PDF</span></a></div>
+      <div class="col-md-4 col-xs-12 stat_counter"><span class="article_counter_read"></span> <span class="hidden-xs">Read: 2 | Download: 2</span></div>
     </div>
   </div>
 </div>\n'''
