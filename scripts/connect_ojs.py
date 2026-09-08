@@ -41,8 +41,7 @@ for path in public_html():
     updated = updated.replace('?domain=https://jurnal.fh.unpad.ac.id',
                               '?domain=https://jurnal.fh.unpad-law.site')
     # Keep the DOI label, but open this mirrored article on the new website.
-    public_article_url = ('https://jurnal.fh.unpad-law.site/UNPAD/' +
-                          path.relative_to(ROOT).as_posix())
+    public_article_url = path.name
     updated = re.sub(r'(<a\b[^>]*class=["\'][^"\']*\bdoi_link\b[^"\']*["\'][^>]*\bhref=["\'])[^"\']+',
                      lambda match: match.group(1) + public_article_url,
                      updated, flags=re.I)
