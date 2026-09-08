@@ -23,7 +23,18 @@ for path in ROOT.rglob("*.html"):
         r'(?:\.\./)*issue/arcive\.html',
         r'/index.php/jbmh/issue/archive', text,
     )
-    text = re.sub(r'(?:\.\./)*home\.html', '/', text)
+    text = re.sub(r'(?:\.\./)*home\.html', '/index.php/jbmh', text)
+    text = text.replace('<base href="/index.php/jbmh">', '<base href="/">')
+    text = re.sub(
+        r'(<a\b[^>]*\bhref=["\'])/(["\'])',
+        r'\1/index.php/jbmh\2',
+        text,
+        flags=re.I,
+    )
+    text = text.replace(
+        'https://jurnal.fh.unpad-law.site/UNPAD/',
+        'https://jurnal.fh.unpad-law.site/index.php/jbmh',
+    )
     text = re.sub(
         r'(href=["\'])([^"\']+?)\.html((?:[?#][^"\']*)?)(["\'])',
         lambda match: match.group(1) + match.group(2) + match.group(3) + match.group(4),

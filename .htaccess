@@ -2,6 +2,9 @@ DirectoryIndex index.html
 
 RewriteEngine On
 
+# Show the journal context in the address bar when the bare domain is opened.
+RewriteRule ^$ index.php/jbmh [R=302,L]
+
 # Keep the public URLs compatible with the journal's former OJS addresses.
 RewriteRule ^index\.php/(?:JBMH|jbmh)/?$ index.html [L,NC]
 RewriteRule ^index\.php/jbmh/article/view/([^/]+)/?$ pages/article/view/$1.html [L,NC]
