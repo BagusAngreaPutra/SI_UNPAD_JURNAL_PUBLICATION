@@ -17,6 +17,14 @@
 .pkp_page_article .article-header { text-align: left; }
 .pkp_page_article .pkp_structure_main:before,
 .pkp_page_article .pkp_structure_main:after { display: none !important; content: none !important; }
+body.pkp_page_article main.pkp_structure_main:first-child:last-child:before,
+body.pkp_page_article main.pkp_structure_main:first-child:last-child:after {
+  display: none !important;
+  content: none !important;
+  width: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+}
 .pkp_page_article .article-details > .row { margin: 0; display: flex; align-items: flex-start; }
 .pkp_page_article .article-sidebar { width: 28%; padding: 0 28px 0 0; }
 .pkp_page_article .article-details > .row > .col-md-8 { width: 72%; padding: 0; }

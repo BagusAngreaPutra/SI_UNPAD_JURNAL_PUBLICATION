@@ -26,8 +26,11 @@ $source = 'https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/download/' . raw
 $temp = $cacheFile . '.part';
 $handle = @fopen($temp, 'wb');
 if (!$handle || !function_exists('curl_init')) {
-    http_response_code(503);
-    exit('PDF service is unavailable.');
+    if (is_resource($handle)) {
+        fclose($handle);
+    }
+    header('Location: ' . $source, true, 302);
+    exit;
 }
 $curl = curl_init($source);
 curl_setopt_array($curl, [
@@ -48,8 +51,10 @@ fclose($handle);
 $header = is_file($temp) ? (string) file_get_contents($temp, false, null, 0, 5) : '';
 if (!$ok || $header !== '%PDF-') {
     @unlink($temp);
-    http_response_code(502);
-    exit('PDF could not be retrieved. Please try again.');
+    // Some shared hosts block outbound cURL. Let the visitor's browser open
+    // the archived PDF directly when server-side caching is unavailable.
+    header('Location: ' . $source, true, 302);
+    exit;
 }
 @rename($temp, $cacheFile);
 header('Content-Type: application/pdf');
