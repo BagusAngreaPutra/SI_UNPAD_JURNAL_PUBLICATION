@@ -103,7 +103,7 @@
 <h4><em class="fa fa-user-o">&nbsp;</em> Contact Info</h4>
 <div class="item-contact">
 <div>redaksi.jbmh@unpad.ac.id</div>
-<div><a href="{/literal}{$unpadPublicUrl|escape}{literal}/home.html">http://jurnal.fh.unpad.ac.id/index.php/jbmh/</a></div>
+<div><a href="{/literal}{$unpadPublicUrl|escape}{literal}/home.html">https://jurnal.fh.unpad-law.site/UNPAD/</a></div>
 </div>
 </div>
 </div>

@@ -26,7 +26,20 @@ for path in public_html():
         return m.group(0)
     updated = ATTR.sub(rewrite, text)
     updated = re.sub(r'(href=["\'][^"\']*/jbmh/)login(["\']><span class="title">Article Submit)', r'\1submission\2', updated)
-    assert ATTR.sub('', updated) == ATTR.sub('', text)
+    updated = updated.replace('http://jurnal.fh.unpad.ac.id/index.php/jbmh/',
+                              'https://jurnal.fh.unpad-law.site/UNPAD/')
+    # Any remaining absolute JBMH URL is an online OJS service (PDF, feed,
+    # citation export, or metadata endpoint). Point it at this installation.
+    # A relative target also works when the project is deployed in a subfolder.
+    ojs = os.path.relpath(ROOT / 'ojs/index.php', path.parent).replace('\\', '/') + '/jbmh'
+    for old in ('https://jurnal.fh.unpad.ac.id/index.php/jbmh',
+                'http://jurnal.fh.unpad.ac.id/index.php/jbmh'):
+        replacements = updated.count(old)
+        if replacements:
+            updated = updated.replace(old, ojs)
+            count += replacements
+    updated = updated.replace('?domain=https://jurnal.fh.unpad.ac.id',
+                              '?domain=https://jurnal.fh.unpad-law.site')
     path.write_bytes(updated.encode('utf-8'))
 
 shell = (ROOT / 'peerreviewprocess.html').read_text(encoding='utf-8')
