@@ -20,12 +20,20 @@ for path in public_html():
         if key.lower() == 'href' and u.hostname == 'jurnal.fh.unpad.ac.id' and u.path.startswith(prefix):
             route = u.path[len(prefix):].strip('/')
             if route in mapping:
+                if mapping[route] == 'search':
+                    target = os.path.relpath(ROOT / 'search.html', path.parent).replace('\\', '/')
+                    count += 1
+                    return key + '=' + quote + target + quote
                 target = os.path.relpath(ROOT / 'ojs/index.php', path.parent).replace('\\', '/')
                 count += 1
                 return key + '=' + quote + target + '/jbmh/' + mapping[route] + quote
         return m.group(0)
     updated = ATTR.sub(rewrite, text)
     updated = re.sub(r'(href=["\'][^"\']*/jbmh/)login(["\']><span class="title">Article Submit)', r'\1submission\2', updated)
+    search_target = os.path.relpath(ROOT / 'search.html', path.parent).replace('\\', '/')
+    updated = re.sub(r'href=(["\'])[^"\']*ojs/index\.php/jbmh/search\1',
+                     lambda match: 'href=' + match.group(1) + search_target + match.group(1),
+                     updated)
     updated = updated.replace('http://jurnal.fh.unpad.ac.id/index.php/jbmh/',
                               'https://jurnal.fh.unpad-law.site/UNPAD/')
     # Any remaining absolute JBMH URL is an online OJS service (PDF, feed,
