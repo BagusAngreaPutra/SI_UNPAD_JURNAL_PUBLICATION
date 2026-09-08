@@ -5,3 +5,4 @@ __pycache__/
 *.sql
 *.sql.gz
 /cpanel-assets-fix.zip
+article-check.png

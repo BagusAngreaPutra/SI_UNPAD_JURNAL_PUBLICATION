@@ -9,6 +9,9 @@ if ($path === '/ojs' || $path === '/ojs/') {
 }
 if (preg_match('~^/ojs/index\.php(?:/|$)~', $path)) { return false; }
 if ($path === '/') { header('Location: /index.php/jbmh', true, 302); return true; }
+if (strcasecmp($path, '/voluem10view') === 0 || strcasecmp($path, '/voluem10view/') === 0) {
+    header('Location: /index.php/jbmh/issue/view/143', true, 302); return true;
+}
 $routes = [
     '~^/index\.php/(?:JBMH|jbmh)/?$~i' => 'index.html',
     '~^/index\.php/jbmh/article/view/([^/]+)/?$~i' => 'pages/article/view/$1.html',
