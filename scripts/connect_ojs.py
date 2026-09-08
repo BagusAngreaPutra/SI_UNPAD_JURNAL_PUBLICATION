@@ -48,6 +48,9 @@ for path in public_html():
             count += replacements
     updated = updated.replace('?domain=https://jurnal.fh.unpad.ac.id',
                               '?domain=https://jurnal.fh.unpad-law.site')
+    visitor_image = os.path.relpath(ROOT / 'assets/visitor-counter.png', path.parent).replace('\\', '/')
+    updated = updated.replace('https://c.statcounter.com/11097330/0/95cfe2d4/0/', visitor_image)
+    updated = updated.replace('http://c.statcounter.com/11097330/0/95cfe2d4/0/', visitor_image)
     # Keep the DOI label, but open this mirrored article on the new website.
     public_article_url = path.name
     updated = re.sub(r'(<a\b[^>]*class=["\'][^"\']*\bdoi_link\b[^"\']*["\'][^>]*\bhref=["\'])[^"\']+',
