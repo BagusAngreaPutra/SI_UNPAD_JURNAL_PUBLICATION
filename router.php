@@ -1,0 +1,21 @@
+<?php
+// Router for the local PHP server. Private runtime data lives outside this root.
+$path = rawurldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?: '/');
+if (str_contains($path, "\0") || str_contains($path, '\\') || preg_match('~(?:^|/)\.\.(?:/|$)~', $path)) {
+    http_response_code(400); exit;
+}
+if ($path === '/ojs' || $path === '/ojs/') {
+    header('Location: /ojs/index.php/jbmh'); exit;
+}
+if (preg_match('~^/ojs/index\.php(?:/|$)~', $path)) { return false; }
+if ($path === '/') { readfile(__DIR__ . '/index.html'); return true; }
+$file = realpath(__DIR__ . $path);
+$root = realpath(__DIR__) . DIRECTORY_SEPARATOR;
+$allowed = ['html', 'css', 'js', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'woff', 'woff2', 'ttf', 'eot', 'webp', 'pdf'];
+if ($file && str_starts_with($file, $root) && is_file($file)
+    && !preg_match('~^/(?:scripts|\.git)(?:/|$)~', $path)
+    && in_array(strtolower(pathinfo($file, PATHINFO_EXTENSION)), $allowed, true)) {
+    return false;
+}
+http_response_code(404);
+echo 'Not Found';

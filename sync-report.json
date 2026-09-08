@@ -1,0 +1,957 @@
+{
+  "downloaded": {
+    "Open_access_policy": {
+      "file": "pages/Open_access_policy.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/Open_access_policy"
+    },
+    "about/contact": {
+      "file": "pages/about/contact.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/about/contact"
+    },
+    "about/privacy": {
+      "file": "pages/about/privacy.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/about/privacy"
+    },
+    "about/submissions": {
+      "file": "pages/about/submissions.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/about/submissions"
+    },
+    "article/view/1621": {
+      "file": "pages/article/view/1621.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1621"
+    },
+    "article/view/1947": {
+      "file": "pages/article/view/1947.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1947"
+    },
+    "article/view/1956": {
+      "file": "pages/article/view/1956.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1956"
+    },
+    "article/view/1997": {
+      "file": "pages/article/view/1997.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1997"
+    },
+    "article/view/2182": {
+      "file": "pages/article/view/2182.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2182"
+    },
+    "article/view/2245": {
+      "file": "pages/article/view/2245.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2245"
+    },
+    "article/view/2353": {
+      "file": "pages/article/view/2353.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2353"
+    },
+    "article/view/2360": {
+      "file": "pages/article/view/2360.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2360"
+    },
+    "article/view/2405": {
+      "file": "pages/article/view/2405.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2405"
+    },
+    "article/view/2420": {
+      "file": "pages/article/view/2420.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2420"
+    },
+    "article/view/2426": {
+      "file": "pages/article/view/2426.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2426"
+    },
+    "article/view/2445": {
+      "file": "pages/article/view/2445.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2445"
+    },
+    "article/view/2448": {
+      "file": "pages/article/view/2448.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2448"
+    },
+    "article/view/2470": {
+      "file": "pages/article/view/2470.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2470"
+    },
+    "article/view/2477": {
+      "file": "pages/article/view/2477.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2477"
+    },
+    "article/view/2495": {
+      "file": "pages/article/view/2495.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2495"
+    },
+    "article/view/2525": {
+      "file": "pages/article/view/2525.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2525"
+    },
+    "article/view/2533": {
+      "file": "pages/article/view/2533.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2533"
+    },
+    "authorguidelines": {
+      "file": "pages/authorguidelines.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/authorguidelines"
+    },
+    "copyrightnotice": {
+      "file": "pages/copyrightnotice.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/copyrightnotice"
+    },
+    "fees": {
+      "file": "pages/fees.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/fees"
+    },
+    "focus_scope": {
+      "file": "pages/focus_scope.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/focus_scope"
+    },
+    "indeks": {
+      "file": "pages/indeks.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/indeks"
+    },
+    "issue/view/1": {
+      "file": "pages/issue/view/1.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/1"
+    },
+    "issue/view/143": {
+      "file": "pages/issue/view/143.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/143"
+    },
+    "issue/view/22": {
+      "file": "pages/issue/view/22.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/22"
+    },
+    "issue/view/3": {
+      "file": "pages/issue/view/3.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/3"
+    },
+    "issue/view/4": {
+      "file": "pages/issue/view/4.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/4"
+    },
+    "issue/view/44": {
+      "file": "pages/issue/view/44.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/44"
+    },
+    "issue/view/5": {
+      "file": "pages/issue/view/5.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/5"
+    },
+    "issue/view/53": {
+      "file": "pages/issue/view/53.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/53"
+    },
+    "issue/view/58": {
+      "file": "pages/issue/view/58.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/58"
+    },
+    "issue/view/6": {
+      "file": "pages/issue/view/6.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/6"
+    },
+    "issue/view/66": {
+      "file": "pages/issue/view/66.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/66"
+    },
+    "issue/view/7": {
+      "file": "pages/issue/view/7.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/7"
+    },
+    "issue/view/75": {
+      "file": "pages/issue/view/75.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/75"
+    },
+    "issue/view/8": {
+      "file": "pages/issue/view/8.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/8"
+    },
+    "issue/view/85": {
+      "file": "pages/issue/view/85.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/85"
+    },
+    "issue/view/9": {
+      "file": "pages/issue/view/9.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/9"
+    },
+    "issue/view/93": {
+      "file": "pages/issue/view/93.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/93"
+    },
+    "issue/view/96": {
+      "file": "pages/issue/view/96.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/96"
+    },
+    "issue/view/jbmh.v1n2": {
+      "file": "pages/issue/view/jbmh.v1n2.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/issue/view/jbmh.v1n2"
+    },
+    "plagiarism_check": {
+      "file": "pages/plagiarism_check.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/plagiarism_check"
+    },
+    "publication_ethics": {
+      "file": "pages/publication_ethics.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/publication_ethics"
+    },
+    "publication_frequency": {
+      "file": "pages/publication_frequency.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/publication_frequency"
+    },
+    "about": {
+      "file": "pages/about.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/about"
+    },
+    "article/view/10": {
+      "file": "pages/article/view/10.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/10"
+    },
+    "article/view/100": {
+      "file": "pages/article/view/100.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/100"
+    },
+    "article/view/101": {
+      "file": "pages/article/view/101.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/101"
+    },
+    "article/view/1016": {
+      "file": "pages/article/view/1016.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1016"
+    },
+    "article/view/1019": {
+      "file": "pages/article/view/1019.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1019"
+    },
+    "article/view/102": {
+      "file": "pages/article/view/102.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/102"
+    },
+    "article/view/105": {
+      "file": "pages/article/view/105.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/105"
+    },
+    "article/view/106": {
+      "file": "pages/article/view/106.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/106"
+    },
+    "article/view/1060": {
+      "file": "pages/article/view/1060.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1060"
+    },
+    "article/view/1062": {
+      "file": "pages/article/view/1062.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1062"
+    },
+    "article/view/107": {
+      "file": "pages/article/view/107.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/107"
+    },
+    "article/view/1071": {
+      "file": "pages/article/view/1071.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1071"
+    },
+    "article/view/1078": {
+      "file": "pages/article/view/1078.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1078"
+    },
+    "article/view/108": {
+      "file": "pages/article/view/108.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/108"
+    },
+    "article/view/1084": {
+      "file": "pages/article/view/1084.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1084"
+    },
+    "article/view/1087": {
+      "file": "pages/article/view/1087.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1087"
+    },
+    "article/view/109": {
+      "file": "pages/article/view/109.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/109"
+    },
+    "article/view/1096": {
+      "file": "pages/article/view/1096.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1096"
+    },
+    "article/view/11": {
+      "file": "pages/article/view/11.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/11"
+    },
+    "article/view/110": {
+      "file": "pages/article/view/110.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/110"
+    },
+    "article/view/1101": {
+      "file": "pages/article/view/1101.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1101"
+    },
+    "article/view/111": {
+      "file": "pages/article/view/111.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/111"
+    },
+    "article/view/112": {
+      "file": "pages/article/view/112.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/112"
+    },
+    "article/view/1120": {
+      "file": "pages/article/view/1120.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1120"
+    },
+    "article/view/113": {
+      "file": "pages/article/view/113.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/113"
+    },
+    "article/view/1178": {
+      "file": "pages/article/view/1178.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1178"
+    },
+    "article/view/12": {
+      "file": "pages/article/view/12.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/12"
+    },
+    "article/view/1212": {
+      "file": "pages/article/view/1212.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1212"
+    },
+    "article/view/1239": {
+      "file": "pages/article/view/1239.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1239"
+    },
+    "article/view/1241": {
+      "file": "pages/article/view/1241.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1241"
+    },
+    "article/view/1255": {
+      "file": "pages/article/view/1255.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1255"
+    },
+    "article/view/126": {
+      "file": "pages/article/view/126.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/126"
+    },
+    "article/view/127": {
+      "file": "pages/article/view/127.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/127"
+    },
+    "article/view/1277": {
+      "file": "pages/article/view/1277.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1277"
+    },
+    "article/view/128": {
+      "file": "pages/article/view/128.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/128"
+    },
+    "article/view/129": {
+      "file": "pages/article/view/129.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/129"
+    },
+    "article/view/1290": {
+      "file": "pages/article/view/1290.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1290"
+    },
+    "article/view/130": {
+      "file": "pages/article/view/130.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/130"
+    },
+    "article/view/131": {
+      "file": "pages/article/view/131.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/131"
+    },
+    "article/view/1310": {
+      "file": "pages/article/view/1310.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1310"
+    },
+    "article/view/1311": {
+      "file": "pages/article/view/1311.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1311"
+    },
+    "article/view/1317": {
+      "file": "pages/article/view/1317.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1317"
+    },
+    "article/view/132": {
+      "file": "pages/article/view/132.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/132"
+    },
+    "article/view/133": {
+      "file": "pages/article/view/133.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/133"
+    },
+    "article/view/1336": {
+      "file": "pages/article/view/1336.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1336"
+    },
+    "article/view/1339": {
+      "file": "pages/article/view/1339.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1339"
+    },
+    "article/view/134": {
+      "file": "pages/article/view/134.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/134"
+    },
+    "article/view/136": {
+      "file": "pages/article/view/136.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/136"
+    },
+    "article/view/1361": {
+      "file": "pages/article/view/1361.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1361"
+    },
+    "article/view/137": {
+      "file": "pages/article/view/137.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/137"
+    },
+    "article/view/138": {
+      "file": "pages/article/view/138.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/138"
+    },
+    "article/view/1384": {
+      "file": "pages/article/view/1384.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1384"
+    },
+    "article/view/14": {
+      "file": "pages/article/view/14.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/14"
+    },
+    "article/view/140": {
+      "file": "pages/article/view/140.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/140"
+    },
+    "article/view/141": {
+      "file": "pages/article/view/141.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/141"
+    },
+    "article/view/1415": {
+      "file": "pages/article/view/1415.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1415"
+    },
+    "article/view/142": {
+      "file": "pages/article/view/142.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/142"
+    },
+    "article/view/143": {
+      "file": "pages/article/view/143.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/143"
+    },
+    "article/view/1435": {
+      "file": "pages/article/view/1435.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1435"
+    },
+    "article/view/144": {
+      "file": "pages/article/view/144.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/144"
+    },
+    "article/view/1446": {
+      "file": "pages/article/view/1446.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1446"
+    },
+    "article/view/1456": {
+      "file": "pages/article/view/1456.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1456"
+    },
+    "article/view/147": {
+      "file": "pages/article/view/147.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/147"
+    },
+    "article/view/148": {
+      "file": "pages/article/view/148.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/148"
+    },
+    "article/view/1487": {
+      "file": "pages/article/view/1487.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1487"
+    },
+    "article/view/149": {
+      "file": "pages/article/view/149.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/149"
+    },
+    "article/view/150": {
+      "file": "pages/article/view/150.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/150"
+    },
+    "article/view/1507": {
+      "file": "pages/article/view/1507.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1507"
+    },
+    "article/view/1508": {
+      "file": "pages/article/view/1508.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1508"
+    },
+    "article/view/151": {
+      "file": "pages/article/view/151.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/151"
+    },
+    "article/view/152": {
+      "file": "pages/article/view/152.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/152"
+    },
+    "article/view/1542": {
+      "file": "pages/article/view/1542.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1542"
+    },
+    "article/view/1585": {
+      "file": "pages/article/view/1585.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1585"
+    },
+    "article/view/1595": {
+      "file": "pages/article/view/1595.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1595"
+    },
+    "article/view/16": {
+      "file": "pages/article/view/16.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/16"
+    },
+    "article/view/1669": {
+      "file": "pages/article/view/1669.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1669"
+    },
+    "article/view/1679": {
+      "file": "pages/article/view/1679.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1679"
+    },
+    "article/view/170": {
+      "file": "pages/article/view/170.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/170"
+    },
+    "article/view/176": {
+      "file": "pages/article/view/176.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/176"
+    },
+    "article/view/1777": {
+      "file": "pages/article/view/1777.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1777"
+    },
+    "article/view/1783": {
+      "file": "pages/article/view/1783.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1783"
+    },
+    "article/view/18": {
+      "file": "pages/article/view/18.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/18"
+    },
+    "article/view/1865": {
+      "file": "pages/article/view/1865.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1865"
+    },
+    "article/view/1879": {
+      "file": "pages/article/view/1879.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1879"
+    },
+    "article/view/1888": {
+      "file": "pages/article/view/1888.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/1888"
+    },
+    "article/view/197": {
+      "file": "pages/article/view/197.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/197"
+    },
+    "article/view/2163": {
+      "file": "pages/article/view/2163.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2163"
+    },
+    "article/view/2268": {
+      "file": "pages/article/view/2268.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/2268"
+    },
+    "article/view/240": {
+      "file": "pages/article/view/240.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/240"
+    },
+    "article/view/252": {
+      "file": "pages/article/view/252.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/252"
+    },
+    "article/view/269": {
+      "file": "pages/article/view/269.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/269"
+    },
+    "article/view/294": {
+      "file": "pages/article/view/294.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/294"
+    },
+    "article/view/3": {
+      "file": "pages/article/view/3.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/3"
+    },
+    "article/view/303": {
+      "file": "pages/article/view/303.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/303"
+    },
+    "article/view/305": {
+      "file": "pages/article/view/305.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/305"
+    },
+    "article/view/307": {
+      "file": "pages/article/view/307.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/307"
+    },
+    "article/view/31": {
+      "file": "pages/article/view/31.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/31"
+    },
+    "article/view/318": {
+      "file": "pages/article/view/318.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/318"
+    },
+    "article/view/324": {
+      "file": "pages/article/view/324.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/324"
+    },
+    "article/view/33": {
+      "file": "pages/article/view/33.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/33"
+    },
+    "article/view/34": {
+      "file": "pages/article/view/34.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/34"
+    },
+    "article/view/354": {
+      "file": "pages/article/view/354.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/354"
+    },
+    "article/view/355": {
+      "file": "pages/article/view/355.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/355"
+    },
+    "article/view/39": {
+      "file": "pages/article/view/39.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/39"
+    },
+    "article/view/4": {
+      "file": "pages/article/view/4.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/4"
+    },
+    "article/view/40": {
+      "file": "pages/article/view/40.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/40"
+    },
+    "article/view/43": {
+      "file": "pages/article/view/43.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/43"
+    },
+    "article/view/44": {
+      "file": "pages/article/view/44.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/44"
+    },
+    "article/view/45": {
+      "file": "pages/article/view/45.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/45"
+    },
+    "article/view/46": {
+      "file": "pages/article/view/46.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/46"
+    },
+    "article/view/47": {
+      "file": "pages/article/view/47.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/47"
+    },
+    "article/view/48": {
+      "file": "pages/article/view/48.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/48"
+    },
+    "article/view/49": {
+      "file": "pages/article/view/49.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/49"
+    },
+    "article/view/5": {
+      "file": "pages/article/view/5.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/5"
+    },
+    "article/view/50": {
+      "file": "pages/article/view/50.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/50"
+    },
+    "article/view/53": {
+      "file": "pages/article/view/53.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/53"
+    },
+    "article/view/533": {
+      "file": "pages/article/view/533.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/533"
+    },
+    "article/view/56": {
+      "file": "pages/article/view/56.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/56"
+    },
+    "article/view/57": {
+      "file": "pages/article/view/57.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/57"
+    },
+    "article/view/571": {
+      "file": "pages/article/view/571.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/571"
+    },
+    "article/view/576": {
+      "file": "pages/article/view/576.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/576"
+    },
+    "article/view/6": {
+      "file": "pages/article/view/6.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/6"
+    },
+    "article/view/61": {
+      "file": "pages/article/view/61.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/61"
+    },
+    "article/view/619": {
+      "file": "pages/article/view/619.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/619"
+    },
+    "article/view/63": {
+      "file": "pages/article/view/63.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/63"
+    },
+    "article/view/637": {
+      "file": "pages/article/view/637.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/637"
+    },
+    "article/view/645": {
+      "file": "pages/article/view/645.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/645"
+    },
+    "article/view/65": {
+      "file": "pages/article/view/65.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/65"
+    },
+    "article/view/66": {
+      "file": "pages/article/view/66.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/66"
+    },
+    "article/view/67": {
+      "file": "pages/article/view/67.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/67"
+    },
+    "article/view/678": {
+      "file": "pages/article/view/678.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/678"
+    },
+    "article/view/687": {
+      "file": "pages/article/view/687.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/687"
+    },
+    "article/view/689": {
+      "file": "pages/article/view/689.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/689"
+    },
+    "article/view/69": {
+      "file": "pages/article/view/69.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/69"
+    },
+    "article/view/7": {
+      "file": "pages/article/view/7.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/7"
+    },
+    "article/view/70": {
+      "file": "pages/article/view/70.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/70"
+    },
+    "article/view/707": {
+      "file": "pages/article/view/707.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/707"
+    },
+    "article/view/708": {
+      "file": "pages/article/view/708.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/708"
+    },
+    "article/view/71": {
+      "file": "pages/article/view/71.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/71"
+    },
+    "article/view/72": {
+      "file": "pages/article/view/72.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/72"
+    },
+    "article/view/720": {
+      "file": "pages/article/view/720.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/720"
+    },
+    "article/view/735": {
+      "file": "pages/article/view/735.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/735"
+    },
+    "article/view/741": {
+      "file": "pages/article/view/741.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/741"
+    },
+    "article/view/747": {
+      "file": "pages/article/view/747.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/747"
+    },
+    "article/view/75": {
+      "file": "pages/article/view/75.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/75"
+    },
+    "article/view/759": {
+      "file": "pages/article/view/759.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/759"
+    },
+    "article/view/76": {
+      "file": "pages/article/view/76.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/76"
+    },
+    "article/view/769": {
+      "file": "pages/article/view/769.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/769"
+    },
+    "article/view/77": {
+      "file": "pages/article/view/77.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/77"
+    },
+    "article/view/787": {
+      "file": "pages/article/view/787.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/787"
+    },
+    "article/view/79": {
+      "file": "pages/article/view/79.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/79"
+    },
+    "article/view/793": {
+      "file": "pages/article/view/793.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/793"
+    },
+    "article/view/8": {
+      "file": "pages/article/view/8.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/8"
+    },
+    "article/view/80": {
+      "file": "pages/article/view/80.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/80"
+    },
+    "article/view/81": {
+      "file": "pages/article/view/81.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/81"
+    },
+    "article/view/82": {
+      "file": "pages/article/view/82.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/82"
+    },
+    "article/view/83": {
+      "file": "pages/article/view/83.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/83"
+    },
+    "article/view/84": {
+      "file": "pages/article/view/84.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/84"
+    },
+    "article/view/85": {
+      "file": "pages/article/view/85.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/85"
+    },
+    "article/view/86": {
+      "file": "pages/article/view/86.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/86"
+    },
+    "article/view/88": {
+      "file": "pages/article/view/88.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/88"
+    },
+    "article/view/89": {
+      "file": "pages/article/view/89.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/89"
+    },
+    "article/view/896": {
+      "file": "pages/article/view/896.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/896"
+    },
+    "article/view/9": {
+      "file": "pages/article/view/9.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/9"
+    },
+    "article/view/90": {
+      "file": "pages/article/view/90.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/90"
+    },
+    "article/view/91": {
+      "file": "pages/article/view/91.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/91"
+    },
+    "article/view/92": {
+      "file": "pages/article/view/92.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/92"
+    },
+    "article/view/93": {
+      "file": "pages/article/view/93.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/93"
+    },
+    "article/view/94": {
+      "file": "pages/article/view/94.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/94"
+    },
+    "article/view/948": {
+      "file": "pages/article/view/948.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/948"
+    },
+    "article/view/95": {
+      "file": "pages/article/view/95.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/95"
+    },
+    "article/view/950": {
+      "file": "pages/article/view/950.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/950"
+    },
+    "article/view/951": {
+      "file": "pages/article/view/951.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/951"
+    },
+    "article/view/96": {
+      "file": "pages/article/view/96.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/96"
+    },
+    "article/view/97": {
+      "file": "pages/article/view/97.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/97"
+    },
+    "article/view/98": {
+      "file": "pages/article/view/98.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/98"
+    },
+    "article/view/985": {
+      "file": "pages/article/view/985.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/985"
+    },
+    "article/view/988": {
+      "file": "pages/article/view/988.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/988"
+    },
+    "article/view/99": {
+      "file": "pages/article/view/99.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/99"
+    },
+    "article/view/jbmh.v1n2.1": {
+      "file": "pages/article/view/jbmh.v1n2.1.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/jbmh.v1n2.1"
+    },
+    "article/view/jbmh.v1n2.2": {
+      "file": "pages/article/view/jbmh.v1n2.2.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/jbmh.v1n2.2"
+    },
+    "article/view/jbmh.v1n2.3": {
+      "file": "pages/article/view/jbmh.v1n2.3.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/jbmh.v1n2.3"
+    },
+    "article/view/jbmh.v1n2.4": {
+      "file": "pages/article/view/jbmh.v1n2.4.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/jbmh.v1n2.4"
+    },
+    "article/view/jbmh.v1n2.5": {
+      "file": "pages/article/view/jbmh.v1n2.5.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/jbmh.v1n2.5"
+    },
+    "article/view/jbmh.v1n2.6": {
+      "file": "pages/article/view/jbmh.v1n2.6.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/jbmh.v1n2.6"
+    },
+    "article/view/jbmh.v1n2.7": {
+      "file": "pages/article/view/jbmh.v1n2.7.html",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/article/view/jbmh.v1n2.7"
+    }
+  },
+  "failed": {},
+  "url_attributes_updated": 7658,
+  "online_services": [
+    "login",
+    "register",
+    "submission",
+    "search",
+    "PDF and citation downloads"
+  ]
+}

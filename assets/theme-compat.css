@@ -1,0 +1,17 @@
+/* Preserve the saved Academic Pro red theme independently of the live OJS theme. */
+.user_navigation { min-height: 50px; background: linear-gradient(to right, #260000, #ed4548); }
+.user_navigation .nav > li > a { color: #fff; }
+.user_navigation .nav > li > a:hover,
+.user_navigation .nav > li > a:focus { background: rgba(255,255,255,.12); }
+.site_header .navbar-nav > li > a { color: #111; }
+.site_header .search_input { margin-top: 14px; }
+.journal_index .about_journal { background: rgba(101, 0, 0, .4); }
+.journal_index .about_journal h1 { color: #ff8080; }
+.pkp_structure_sidebar .pkp_block .title { display: block; width: 100%; height: auto; min-height: 46px; color: #fff; font-weight: 700; background: linear-gradient(135deg, #fa4b50 0%, #ee4548 52%, #a60000 100%); }
+.pkp_structure_sidebar .pkp_block .title:hover { background: #af0808; }
+.pkp_structure_sidebar .pkp_block a:hover { text-decoration: none; }
+@media (min-width: 992px) {
+  .site_header .search_input { float: right; }
+  .main_content > .pkp_structure_main.col-md-8 { width: 66.66666667%; }
+  .main_content > .pkp_structure_sidebar.col-md-4 { width: 33.33333333%; }
+}

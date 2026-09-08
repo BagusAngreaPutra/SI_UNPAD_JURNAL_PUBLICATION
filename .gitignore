@@ -1,0 +1,6 @@
+/ojs/config.inc.php
+/ojs/cache/
+__pycache__/
+.env
+.sql.gz
+/cpanel-assets-fix.zip

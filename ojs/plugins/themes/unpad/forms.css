@@ -1,0 +1,15 @@
+/* Adapt native OJS form markup to the existing Bootstrap-based public shell. */
+.pkp_structure_main .cmp_form { font-size: 14px; line-height: 1.6; max-width: 640px; }
+.pkp_structure_main .cmp_form .label { display: block; color: #333; background: transparent; font-size: 14px; padding: 0; text-align: left; white-space: normal; }
+.pkp_structure_main .cmp_form label { display: block; font-weight: 400; }
+.pkp_structure_main .cmp_form .fields > div { margin-bottom: 18px; }
+.pkp_structure_main .cmp_form input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),
+.pkp_structure_main .cmp_form select,
+.pkp_structure_main .cmp_form textarea { display: block; width: 100%; min-height: 38px; padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; color: #333; background: #fff; font-size: 14px; }
+.pkp_structure_main .cmp_form a { font-size: 14px; }
+.pkp_structure_main .cmp_form .submit { padding: 9px 22px; background: #ac0a0a; border: 1px solid #ac0a0a; border-radius: 4px; color: #fff; font-size: 14px; }
+.pkp_structure_main .cmp_form .buttons { display: flex; align-items: center; gap: 18px; margin-top: 20px; }
+.pkp_structure_main .cmp_form .checkbox { padding-left: 20px; }
+.pkp_structure_main .cmp_form fieldset { margin-bottom: 20px; }
+.pkp_structure_main .cmp_form legend { color: #333; }
+.pkp_screen_reader { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important; }

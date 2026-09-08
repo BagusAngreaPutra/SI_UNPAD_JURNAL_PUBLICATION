@@ -1,0 +1,516 @@
+{
+  "downloaded": {
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?v=3.1.2.4": {
+      "file": "assets/vendor/bb68457b34d9ffcf55db.js",
+      "kind": "js",
+      "source": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?v=3.1.2.4",
+      "bytes": 86927
+    },
+    "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js?v=3.1.2.4": {
+      "file": "assets/vendor/a98f4b9035e76a0bb7f7.js",
+      "kind": "js",
+      "source": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js?v=3.1.2.4",
+      "bytes": 253385
+    },
+    "https://badge.dimensions.ai/badge.css": {
+      "file": "assets/vendor/ee042201deda995255c6.css",
+      "kind": "css",
+      "source": "https://badge.dimensions.ai/badge.css",
+      "bytes": 66982
+    },
+    "https://badge.dimensions.ai/badge.js": {
+      "file": "assets/vendor/313e2b10895f8b45a56a.js",
+      "kind": "js",
+      "source": "https://badge.dimensions.ai/badge.js",
+      "bytes": 533262
+    },
+    "https://badge.dimensions.ai/badge?count=0": {
+      "file": "assets/vendor/bf071968e0ff04905640.png",
+      "kind": "image",
+      "source": "https://badge.dimensions.ai/badge?count=0",
+      "bytes": 9315
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css?v=3.1.2.4": {
+      "file": "assets/vendor/1620f3323565dc019ba2.css",
+      "kind": "css",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css?v=3.1.2.4",
+      "bytes": 37414
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css?v=3.1.2.4": {
+      "file": "assets/vendor/3d358f82b7cf770f1557.css",
+      "kind": "css",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css?v=3.1.2.4",
+      "bytes": 2390
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css?v=3.1.2.4": {
+      "file": "assets/vendor/e2eb444fb48370818449.css",
+      "kind": "css",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css?v=3.1.2.4",
+      "bytes": 1369
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js?v=3.1.2.4": {
+      "file": "assets/vendor/5a21fb49e43042e3f5f0.js",
+      "kind": "js",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js?v=3.1.2.4",
+      "bytes": 43881
+    },
+    "https://crossmark-cdn.crossref.org/widget/v2.0/logos/CROSSMARK_Color_horizontal.svg": {
+      "file": "assets/vendor/97fd56d917e3c7be6d40.svg",
+      "kind": "image",
+      "source": "https://crossmark-cdn.crossref.org/widget/v2.0/logos/CROSSMARK_Color_horizontal.svg",
+      "bytes": 9906
+    },
+    "https://crossmark-cdn.crossref.org/widget/v2.0/widget.js": {
+      "file": "assets/vendor/40a679d336972fa0d046.js",
+      "kind": "js",
+      "source": "https://crossmark-cdn.crossref.org/widget/v2.0/widget.js",
+      "bytes": 4854
+    },
+    "https://fonts.googleapis.com/css?family=Lora": {
+      "file": "assets/vendor/f2eee84cb465bd7173c4.css",
+      "kind": "css",
+      "source": "https://fonts.googleapis.com/css?family=Lora",
+      "bytes": 189
+    },
+    "https://i.creativecommons.org/l/by/4.0/88x31.png": {
+      "file": "assets/vendor/a73f6d53aee85868ade6.png",
+      "kind": "image",
+      "source": "https://licensebuttons.net/l/by/4.0/88x31.png",
+      "bytes": 1249
+    },
+    "https://jurnal.fh.unpad.ac.id/index.php/jbmh/$$$call$$$/page/page/css?name=bootstrap": {
+      "file": "assets/vendor/c16c57d4e947cafb58da.css",
+      "kind": "css",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css",
+      "bytes": 121200
+    },
+    "https://jurnal.fh.unpad.ac.id/index.php/jbmh/$$$call$$$/page/page/css?name=stylesheet": {
+      "file": "assets/vendor/34575f574a718f532854.css",
+      "kind": "css",
+      "source": "https://jurnal.fh.unpad.ac.id/index.php/jbmh/$$$call$$$/page/page/css?name=stylesheet",
+      "bytes": 63613
+    },
+    "https://jurnal.fh.unpad.ac.id/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js?v=3.1.2.4": {
+      "file": "assets/vendor/153ce5d25d6d477ef63d.js",
+      "kind": "js",
+      "source": "https://jurnal.fh.unpad.ac.id/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js?v=3.1.2.4",
+      "bytes": 23534
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/citationStyleLanguage/js/articleCitation.js?v=3.1.2.4": {
+      "file": "assets/vendor/c700bd06efe4c89a6070.js",
+      "kind": "js",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/citationStyleLanguage/js/articleCitation.js?v=3.1.2.4",
+      "bytes": 3470
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/bootstrap/js/bootstrap.min.js?v=3.1.2.4": {
+      "file": "assets/vendor/d49972ce8b832c4ed90b.js",
+      "kind": "js",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/bootstrap/js/bootstrap.min.js?v=3.1.2.4",
+      "bytes": 37045
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/js/app.js?v=3.1.2.4": {
+      "file": "assets/vendor/5f0075863fd41070751a.js",
+      "kind": "js",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/js/app.js?v=3.1.2.4",
+      "bytes": 6814
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/js/lib/readmore.min.js?v=3.1.2.4": {
+      "file": "assets/vendor/e2b3d2562dc9cc89db43.js",
+      "kind": "js",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/js/lib/readmore.min.js?v=3.1.2.4",
+      "bytes": 4437
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/styles/academic_pro.min.css?v=3.1.2.4": {
+      "file": "assets/vendor/73065faed541f3ce7dec.css",
+      "kind": "css",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/styles/academic_pro.min.css?v=3.1.2.4",
+      "bytes": 23013
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/styles/header/red.css?v=3.1.2.4": {
+      "file": "assets/vendor/8fdd1d554686a88cd45e.css",
+      "kind": "css",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/styles/header/red.css?v=3.1.2.4",
+      "bytes": 118
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/styles/mobile_responsive.css?v=3.1.2.4": {
+      "file": "assets/vendor/39656311ed9709c6b0f6.css",
+      "kind": "css",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/styles/mobile_responsive.css?v=3.1.2.4",
+      "bytes": 4902
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_105_en_US.jpg": {
+      "file": "assets/vendor/140c501c37ebc92d68ff.jpg",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_105_en_US.jpg",
+      "bytes": 318803
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_1_en_US.png": {
+      "file": "assets/vendor/883d0cdaa5e4da8aab55.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_1_en_US.png",
+      "bytes": 38642
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_22_en_US.png": {
+      "file": "assets/vendor/e9f5c97c488f374162b7.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_22_en_US.png",
+      "bytes": 37712
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_2_en_US.png": {
+      "file": "assets/vendor/24e3569127573f2e4d78.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_2_en_US.png",
+      "bytes": 39798
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_3_en_US.png": {
+      "file": "assets/vendor/a12d842d842faf3e3ea8.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_3_en_US.png",
+      "bytes": 40722
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_44_en_US.png": {
+      "file": "assets/vendor/f6a32072eb24e3ccb835.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_44_en_US.png",
+      "bytes": 38803
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_4_en_US.png": {
+      "file": "assets/vendor/56ed62e04e3ed9970659.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_4_en_US.png",
+      "bytes": 39389
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_53_en_US.png": {
+      "file": "assets/vendor/642a058fdec90400dfc5.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_53_en_US.png",
+      "bytes": 596360
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_58_en_US.png": {
+      "file": "assets/vendor/4f63f4bfce4629baa1c9.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_58_en_US.png",
+      "bytes": 601888
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_5_en_US.png": {
+      "file": "assets/vendor/d792bebf4a7332dcde33.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_5_en_US.png",
+      "bytes": 41304
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_66_en_US.png": {
+      "file": "assets/vendor/df9dc8ea95c526120cd1.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_66_en_US.png",
+      "bytes": 41971
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_6_en_US.png": {
+      "file": "assets/vendor/b1c4edfa67504577c65f.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_6_en_US.png",
+      "bytes": 38553
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_75_en_US.png": {
+      "file": "assets/vendor/98cef17484c44c2a607b.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_75_en_US.png",
+      "bytes": 38627
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_7_en_US.png": {
+      "file": "assets/vendor/7a669554ccd693e7dc4a.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_7_en_US.png",
+      "bytes": 38343
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_85_en_US.png": {
+      "file": "assets/vendor/f4ce714b466fd86cf5c7.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_85_en_US.png",
+      "bytes": 38627
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_8_en_US.png": {
+      "file": "assets/vendor/b72542e9bd068a2236c3.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_8_en_US.png",
+      "bytes": 46702
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_93_en_US.png": {
+      "file": "assets/vendor/4040ec389a0b537f37b1.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_93_en_US.png",
+      "bytes": 38923
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_96_en_US.jpg": {
+      "file": "assets/vendor/6121ec0bcf79ec9f4501.jpg",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_96_en_US.jpg",
+      "bytes": 297460
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_9_en_US.png": {
+      "file": "assets/vendor/fcb916d7ad69bb01b2f4.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/cover_issue_9_en_US.png",
+      "bytes": 39776
+    },
+    "https://jurnal.fh.unpad.ac.id/public/journals/6/favicon_en_US.png": {
+      "file": "assets/vendor/c0380e34582a43a6d40a.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/journals/6/favicon_en_US.png",
+      "bytes": 3127
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/1466137432.png": {
+      "file": "assets/vendor/cd562042e6605fb0181d.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/1466137432.png",
+      "bytes": 247
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/1473298865.png": {
+      "file": "assets/vendor/59fe490111bfc1f65014.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/1473298865.png",
+      "bytes": 240
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/Logo_Unpad1.png": {
+      "file": "assets/vendor/ea3535678d591d4a2e13.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/Logo_Unpad1.png",
+      "bytes": 28469
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/cover-jbmh.png": {
+      "file": "assets/vendor/58eb07412befb5c6e95d.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/cover-jbmh.png",
+      "bytes": 448075
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/crossref2.png": {
+      "file": "assets/vendor/8c2fcc469dcd3121c6bd.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/crossref2.png",
+      "bytes": 21646
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/dimensions2.png": {
+      "file": "assets/vendor/c53b572ff24c06d78230.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/dimensions2.png",
+      "bytes": 7867
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/garuda2.png": {
+      "file": "assets/vendor/84bec0751e44eb1657a6.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/garuda2.png",
+      "bytes": 7514
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/google_scholar2.png": {
+      "file": "assets/vendor/5e0463ab34b0ade90882.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/google_scholar2.png",
+      "bytes": 22092
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/onesearch3.png": {
+      "file": "assets/vendor/457a451619ec41781646.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/onesearch3.png",
+      "bytes": 22572
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/sertifikat_jbmh.jpg": {
+      "file": "assets/vendor/95d13e9d687cdf730c15.jpg",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/sertifikat_jbmh.jpg",
+      "bytes": 57659
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/sinta2.png": {
+      "file": "assets/vendor/39f5109002d4ac66c537.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/sinta2.png",
+      "bytes": 23218
+    },
+    "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/worldcat2.png": {
+      "file": "assets/vendor/fba29cfe637ff20ecd83.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/public/site/images/adminjurnalfh/worldcat2.png",
+      "bytes": 21610
+    },
+    "https://lh3.googleusercontent.com/3v0ALa0JLSPDgekzPMt8JMHM92QhyNMbb39zZruAsYIS_Ue-_BeVPVOJmCoQ94PYEb0cUIYLMVASm6qtjNGOhiOFhR1ia5Jpgmynac-e-V79rR3H9NUhGj0ClB2ydpWhfs6MnMYvmA=w666-h667-no": {
+      "file": "assets/vendor/eb12cddaf1d53993b05d.png",
+      "kind": "image",
+      "source": "https://lh3.googleusercontent.com/3v0ALa0JLSPDgekzPMt8JMHM92QhyNMbb39zZruAsYIS_Ue-_BeVPVOJmCoQ94PYEb0cUIYLMVASm6qtjNGOhiOFhR1ia5Jpgmynac-e-V79rR3H9NUhGj0ClB2ydpWhfs6MnMYvmA=w666-h667-no",
+      "bytes": 17463
+    },
+    "https://lh3.googleusercontent.com/bZjdBf9LQXjH3ubeED2yZztfn2yE17FtIUYAwmM0aV7fsImhYnOhSqjHSQLszabmLM4w1NXA8WlLqfk5T8DQ5wWxN6NGyd1yhijaGSp85pNyAXJwMoh8aYz30pE3GGdIENG1Aur-9g=w518-h520-no": {
+      "file": "assets/vendor/aa7fc3905dfd3f20bfa8.png",
+      "kind": "image",
+      "source": "https://lh3.googleusercontent.com/bZjdBf9LQXjH3ubeED2yZztfn2yE17FtIUYAwmM0aV7fsImhYnOhSqjHSQLszabmLM4w1NXA8WlLqfk5T8DQ5wWxN6NGyd1yhijaGSp85pNyAXJwMoh8aYz30pE3GGdIENG1Aur-9g=w518-h520-no",
+      "bytes": 12603
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot": {
+      "file": "assets/vendor/2a5812fda01459f6342e.eot",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot",
+      "bytes": 165742
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0": {
+      "file": "assets/vendor/c1bd92618dc3fb8c20a8.eot",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0",
+      "bytes": 165742
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0": {
+      "file": "assets/vendor/be78f73f44edf8a05356.svg",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0",
+      "bytes": 444379
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0": {
+      "file": "assets/vendor/51223a52a2b60971828a.ttf",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0",
+      "bytes": 165548
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0": {
+      "file": "assets/vendor/6bed8a12df04689d9684.woff2",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0",
+      "bytes": 77160
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0": {
+      "file": "assets/vendor/4320b920ace9c9d454d4.woff",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0",
+      "bytes": 98024
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/ajax-loader.gif": {
+      "file": "assets/vendor/892dc030cd663477f31c.gif",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/ajax-loader.gif",
+      "bytes": 4178
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/fonts/slick.eot": {
+      "file": "assets/vendor/41491cd12fc29803f885.eot",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/fonts/slick.eot",
+      "bytes": 2048
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/fonts/slick.svg": {
+      "file": "assets/vendor/e99dd651eb2b5547c764.svg",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/fonts/slick.svg",
+      "bytes": 2152
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/fonts/slick.ttf": {
+      "file": "assets/vendor/d0607ea4f811a79f6c82.ttf",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/fonts/slick.ttf",
+      "bytes": 1892
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/fonts/slick.woff": {
+      "file": "assets/vendor/6eecf3567ca6c6f1da52.woff",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/fonts/slick.woff",
+      "bytes": 1380
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot": {
+      "file": "assets/vendor/af26e62d766e275b039a.eot",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot",
+      "bytes": 20127
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg": {
+      "file": "assets/vendor/df14a935c4e84df4211c.svg",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg",
+      "bytes": 108738
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf": {
+      "file": "assets/vendor/0fdde2254ebe33f39a73.ttf",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf",
+      "bytes": 45404
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff": {
+      "file": "assets/vendor/f1e4b01c7635c430a26b.woff",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff",
+      "bytes": 23424
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2": {
+      "file": "assets/vendor/71bab195e3dbf6733526.woff2",
+      "kind": "image",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2",
+      "bytes": 18028
+    },
+    "https://fonts.googleapis.com/css?family=Merriweather&display=swap": {
+      "file": "assets/vendor/f547f53cb64ccd3dd4af.css",
+      "kind": "css",
+      "source": "https://fonts.googleapis.com/css?family=Merriweather&display=swap",
+      "bytes": 296
+    },
+    "https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf": {
+      "file": "assets/vendor/94ea3185bcb43a7b7720.ttf",
+      "kind": "image",
+      "source": "https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf",
+      "bytes": 47396
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/DOI_logo.svg": {
+      "file": "assets/vendor/611a6eed9f34b5316478.svg",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/DOI_logo.svg",
+      "bytes": 3379
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/bar_chart_icon.png": {
+      "file": "assets/vendor/bacc9328015459caa565.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/bar_chart_icon.png",
+      "bytes": 1358
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/footer_bg.png": {
+      "file": "assets/vendor/89a5b1d7aa4fa837f045.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/footer_bg.png",
+      "bytes": 33702
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/google_scholar_logo.svg": {
+      "file": "assets/vendor/852e77c1161fcd21bb78.svg",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/google_scholar_logo.svg",
+      "bytes": 363
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/headershadow.png": {
+      "file": "assets/vendor/59f6293fcbcecf25b397.png",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/headershadow.png",
+      "bytes": 3484
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/orcid_logo.svg": {
+      "file": "assets/vendor/02e839e1304314dbb6c2.svg",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/orcid_logo.svg",
+      "bytes": 983
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/scopus_logo.svg": {
+      "file": "assets/vendor/6c40b350a1cb4939af80.svg",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/images/scopus_logo.svg",
+      "bytes": 9446
+    },
+    "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/styles/header/header_red.jpg": {
+      "file": "assets/vendor/c62b5ed7453123905c61.jpg",
+      "kind": "image",
+      "source": "https://jurnal.fh.unpad.ac.id/plugins/generic/ojtPlugin/modules/academic_pro3/styles/header/header_red.jpg",
+      "bytes": 91024
+    },
+    "https://fonts.gstatic.com/s/merriweather/v33/u-4D0qyriQwlOrhSvowK_l5UcA6zuSYEqOzpPe3HOZJ5eX1WtLaQwmYiScCmDxhtNOKl8yDr3icaFF3w.ttf": {
+      "file": "assets/vendor/7e7404321e7a5077d69a.ttf",
+      "kind": "image",
+      "source": "https://fonts.gstatic.com/s/merriweather/v33/u-4D0qyriQwlOrhSvowK_l5UcA6zuSYEqOzpPe3HOZJ5eX1WtLaQwmYiScCmDxhtNOKl8yDr3icaFF3w.ttf",
+      "bytes": 130104
+    },
+    "https://sinta.kemdikbud.go.id/badge/journal?id=4206": {
+      "file": "assets/vendor/b6d95f660672afa2032a.png",
+      "kind": "image",
+      "source": "https://sinta.kemdiktisaintek.go.id/badge/journal?id=4206",
+      "bytes": 56796
+    }
+  },
+  "unavailable": {},
+  "updated_attributes": 0
+}
