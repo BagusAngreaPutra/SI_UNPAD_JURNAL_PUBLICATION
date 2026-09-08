@@ -38,14 +38,14 @@ shell = (ROOT / 'peerreviewprocess.html').read_text(encoding='utf-8')
 start = shell.index('<div id="main-content"')
 end = shell.index('</main>', start) + len('</main>')
 body = '''<div id="main-content" class="page page_search">
-<div class="container"><div class="row"><main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">
-<header class="page-header"><h1>Search</h1></header>
+<div class="page-header"><h1>Search</h1></div>
 <form id="local-search-form" class="search-form" role="search">
 <div class="form-group"><label for="local-search-query">Search articles</label>
 <input id="local-search-query" class="form-control" type="search" placeholder="Title, author, DOI, keyword..." autocomplete="off"></div>
 <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i> Search</button>
 </form><p id="search-status" style="margin-top:24px"></p><div id="search-results"></div>
-</main></div></div></div>'''
+</div><!-- .page -->
+</main>'''
 page = shell[:start] + body + shell[end:]
 page = re.sub(r'<title>.*?</title>', '<title>Search | Jurnal Bina Mulia Hukum</title>', page, count=1, flags=re.S)
 page = page.replace('</body>', '<script src="assets/search-index.js"></script><script src="assets/search.js"></script></body>')
