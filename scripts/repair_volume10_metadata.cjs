@@ -22,8 +22,8 @@ for (const name of fs.readdirSync(path.join(root, 'pages/article/view'))) {
       if (/name="DC.Date.(created|dateSubmitted|modified)"/i.test(tag)) return '';
       if (/name="(?:DC.Creator.PersonalName|citation_author)"/i.test(tag) && /content=""/.test(tag)) return '';
       if (/name="generator"/i.test(tag) && tag.includes('Sarak Opat')) return '';
-      if (/name="DC.Identifier.pageNumber"/i.test(tag)) return tag.replace(/content="[^"]*"/, 'content="179-186"');
-      if (/name="citation_firstpage"/i.test(tag)) return tag.replace(/content="[^"]*"/, 'content="179"');
+      if (/name="DC.Identifier.pageNumber"/i.test(tag)) return tag.replace(/content="[^"]*"/, 'content="178-186"');
+      if (/name="citation_firstpage"/i.test(tag)) return tag.replace(/content="[^"]*"/, 'content="178"');
       if (/name="citation_lastpage"/i.test(tag)) return tag.replace(/content="[^"]*"/, 'content="186"');
       if (/name="DC.Rights"/i.test(tag) && tag.includes('Copyright')) return tag.replace(/content="[^"]*"/, 'content="Copyright (c) 2026 Fitri Anita, Muhammad Amri Bintang"');
       if (/name="(?:DC.Language|citation_language)"/i.test(tag)) return tag.replace('content="en"', 'content="id"');
@@ -31,9 +31,9 @@ for (const name of fs.readdirSync(path.join(root, 'pages/article/view'))) {
       return tag;
     });
     if (!text.includes('name="citation_firstpage"')) {
-      text = text.replace('</head>', '<meta name="DC.Identifier.pageNumber" content="179-186">\n<meta name="citation_firstpage" content="179">\n<meta name="citation_lastpage" content="186">\n</head>');
+      text = text.replace('</head>', '<meta name="DC.Identifier.pageNumber" content="178-186">\n<meta name="citation_firstpage" content="178">\n<meta name="citation_lastpage" content="186">\n</head>');
     }
-    text = text.replace(/10\(2\)(?:, 166-178)?\./g, '10(2), 179-186.');
+    text = text.replace(/10\(2\)(?:, 166-178)?\./g, '10(2), 178-186.');
     // Remove citation format requests pointing to a different OJS submission.
     text = text.replace(/<div class="btn-group">[\s\S]*?<\/div>/, match => {
       if (!match.includes('submissionId=1997')) return match;
@@ -54,5 +54,5 @@ for (const name of fs.readdirSync(path.join(root, 'pages/article/view'))) {
 }
 console.log(`Aligned publication metadata for ${articles} articles.`);
 for (const file of ['index.html', 'home.html', 'pages/issue/view/143.html']) {
-  write(file, read(file).replace(/(<div class="article-summary media fitri-bintang-article">[\s\S]*?)<span class="pull-left pages">[^\r\n]*/, '$1<span class="pull-left pages"><i class="fa fa-file-text-o" aria-hidden="true"></i> <span class="page_number">179-186</span></span>'));
+  write(file, read(file).replace(/(<div class="article-summary media fitri-bintang-article">[\s\S]*?)<span class="pull-left pages">[^\r\n]*/, '$1<span class="pull-left pages"><i class="fa fa-file-text-o" aria-hidden="true"></i> <span class="page_number">178-186</span></span>'));
 }

@@ -1,4 +1,4 @@
-// Insert the eight-page VIS article at 179-186 in the local edition.
+// Keep the requested VIS range 178-186 and subsequent article ranges.
 const fs = require('fs');
 const path = require('path');
 const root = path.resolve(__dirname, '..');
@@ -27,7 +27,7 @@ for (const file of ['index.html', 'home.html', 'pages/issue/view/143.html']) {
   write(file, read(file).replace(/(<span class="page_number">\s*)(\d+-\d+)(\s*<\/span>)/g,
     (match, before, range, after) => before + (replacements.get(range) ?? range) + after));
 }
-// Verify that every article in this edition occupies a distinct page range.
+// Verify subsequent ranges; the user explicitly selected a shared page 178.
 const actual = [...Object.keys(ranges), '1997', '2534'].map(id => {
   const text = read(`pages/article/view/${id}.html`);
   const tags = [...text.matchAll(/<meta\b[^>]*>/g)].map(match => match[0]);
@@ -35,6 +35,7 @@ const actual = [...Object.keys(ranges), '1997', '2534'].map(id => {
   return {id, first: value('citation_firstpage'), last: value('citation_lastpage')};
 }).sort((a, b) => a.first - b.first);
 for (let i = 1; i < actual.length; i++) {
+  if (actual[i].id === '2534' && actual[i].first === 178 && actual[i - 1].id === '1997' && actual[i - 1].last === 178) continue;
   if (actual[i].first !== actual[i - 1].last + 1) throw new Error('Page ranges overlap or contain a gap');
 }
 console.log(actual.map(article => `${article.id}: ${article.first}-${article.last}`).join('\n'));

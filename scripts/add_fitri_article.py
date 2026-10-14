@@ -75,8 +75,8 @@ if True:
         elif name in {"dc.identifier.uri", "citation_abstract_html_url"}: meta["content"] = url
         elif name == "citation_pdf_url": meta["content"] = pdf_url
         elif name in {"dc.title", "citation_title"}: meta["content"] = title
-        elif name == "dc.identifier.pagenumber": meta["content"] = "179-186"
-        elif name == "citation_firstpage": meta["content"] = "179"
+        elif name == "dc.identifier.pagenumber": meta["content"] = "178-186"
+        elif name == "citation_firstpage": meta["content"] = "178"
         elif name == "citation_lastpage": meta["content"] = "186"
         elif name == "dc.date.issued": meta["content"] = "2026-09"
         elif name == "citation_date": meta["content"] = "2026/09"
@@ -127,7 +127,7 @@ if True:
     badge = soup.select_one(".dimension_badge")
     if badge: badge.decompose()
     citation = soup.select_one(".csl-entry")
-    if citation: citation.string = f"Anita, F., & Bintang, M. A. (2026). {title}. Jurnal Bina Mulia Hukum, 10(2), 179-186."
+    if citation: citation.string = f"Anita, F., & Bintang, M. A. (2026). {title}. Jurnal Bina Mulia Hukum, 10(2), 178-186."
     for group in soup.select('.how-to-cite .btn-group'): group.decompose()
     for link in soup.select('.citation_download a'):
         format_name = 'ris' if '/ris?' in link.get('href', '') else 'bib'
@@ -151,7 +151,7 @@ card = f'''\n<div class="article-summary media fitri-bintang-article">
     <div class="meta row">
       <div class="col-md-12 col-xs-12 journal_index_doi"><span class="doi_logo"></span><a href="{simulation_url}" class="doi_link">{simulation_url.rsplit('/', 1)[-1]}</a></div>
       <div class="col-md-12 col-xs-12">
-        <span class="pull-left pages"><i class="fa fa-file-text-o" aria-hidden="true"></i> <span class="page_number">179-186</span></span>
+        <span class="pull-left pages"><i class="fa fa-file-text-o" aria-hidden="true"></i> <span class="page_number">178-186</span></span>
         <span class="pull-right author"><i class="fa fa-users"></i> Fitri Anita, Muhammad Amri Bintang</span>
       </div>
     </div>
