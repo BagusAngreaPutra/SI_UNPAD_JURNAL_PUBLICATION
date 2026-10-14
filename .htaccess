@@ -1,10 +1,20 @@
 DirectoryIndex index.html
 
+# Revalidate public pages after updates; keep article counters/PDF responses fresh.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|js|css)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <Files "Artikel_Fitri_dan_Bintang_JBMH.pdf">
+    Header set Cache-Control "no-store"
+  </Files>
+</IfModule>
+
 RewriteEngine On
 
 # Show the journal context in the address bar when the bare domain is opened.
 RewriteRule ^$ index.php/jbmh [R=302,L]
-RewriteRule ^voluem10view/?$ index.php/jbmh/issue/view/143 [R=302,L,NC]
+RewriteRule ^voluem10view/?$ /issue/voluem10view.html [R=302,L,NC]
 
 # Keep the public URLs compatible with the journal's former OJS addresses.
 RewriteRule ^index\.php/(?:JBMH|jbmh)/?$ index.html [L,NC]

@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
-source_pdf = ROOT / "Artikel_Fitri_&_Bintang_JBMH.pdf"
+source_pdf = ROOT / "Artikel Fitri dan Bintang JBMH.pdf"
 pdf_dir = ROOT / "assets" / "pdfs"
 pdf_dir.mkdir(parents=True, exist_ok=True)
 pdf_target = pdf_dir / "Artikel_Fitri_dan_Bintang_JBMH.pdf"
@@ -13,7 +13,7 @@ if source_pdf.exists():
 
 slug = "2534"
 url = f"/index.php/jbmh/article/view/{slug}"
-pdf_url = "/assets/pdfs/Artikel_Fitri_dan_Bintang_JBMH.pdf"
+pdf_url = "/article-stats.php?action=download&v=" + __import__('hashlib').sha256(pdf_target.read_bytes()).hexdigest()[:12]
 title = ("Reformulasi Pengaturan Victim Impact Statement (VIS) sebagai Penguatan Hak "
          "Korban dalam Sistem Peradilan Pidana Indonesia")
 abstract = ("Undang-Undang Nomor 20 Tahun 2025 tentang Kitab Undang-Undang Hukum Acara "
@@ -27,7 +27,7 @@ abstract = ("Undang-Undang Nomor 20 Tahun 2025 tentang Kitab Undang-Undang Hukum
             "sekaligus instrumen pengakuan, partisipasi, dan pemulihan korban.")
 authors = ["Fitri Anita", "Muhammad Amri Bintang"]
 keywords = ["Victim Impact Statement", "Hak Korban", "Peradilan Pidana", "KUHAP"]
-temporary_doi = "10.24198/jbmh.v10i2.1997"
+simulation_url = "https://doi-reg.org/10.2498.jbmh.v10i2.2330"
 references = [
     "Cruz, Peter de. Comparative Law in a Changing World. 4th ed. London: Routledge, 2020.",
     "Hadjon, Philipus M. Perlindungan Hukum bagi Rakyat Indonesia. Surabaya: Bina Ilmu, 1987.",
@@ -70,12 +70,22 @@ if True:
         if name in {"description", "og:description", "dc.description"}: meta["content"] = abstract
         elif name == "author": meta["content"] = ",".join(authors)
         elif name in {"keywords", "citation_keywords"}: meta["content"] = ",".join(keywords)
-        elif name in {"dc.identifier.doi", "citation_doi"}: meta["content"] = temporary_doi
+        elif name in {"dc.identifier.doi", "citation_doi"}: meta.decompose()
         elif name == "dc.identifier": meta["content"] = slug
         elif name in {"dc.identifier.uri", "citation_abstract_html_url"}: meta["content"] = url
         elif name == "citation_pdf_url": meta["content"] = pdf_url
         elif name in {"dc.title", "citation_title"}: meta["content"] = title
-        elif name == "dc.identifier.pagenumber": meta["content"] = "166-178"
+        elif name == "dc.identifier.pagenumber": meta["content"] = "179-186"
+        elif name == "citation_firstpage": meta["content"] = "179"
+        elif name == "citation_lastpage": meta["content"] = "186"
+        elif name == "dc.date.issued": meta["content"] = "2026-09"
+        elif name == "citation_date": meta["content"] = "2026/09"
+        elif name in {"dc.date.created", "dc.date.datesubmitted", "dc.date.modified"}: meta.decompose()
+        elif name in {"dc.language", "citation_language"}: meta["content"] = "id"
+        elif name == "dc.rights" and "Copyright" in meta.get("content", ""):
+            meta["content"] = "Copyright (c) 2026 Fitri Anita, Muhammad Amri Bintang"
+        elif name == "generator" and "Sarak Opat" in meta.get("content", ""): meta.decompose()
+        elif name == "citation_journal_abbrev": meta["content"] = "JBMH"
     soup.select_one("h1.article-title").string = title
     creator_metas = soup.find_all("meta", attrs={"name": "DC.Creator.PersonalName"})
     citation_authors = soup.find_all("meta", attrs={"name": "citation_author"})
@@ -83,7 +93,7 @@ if True:
     subject_metas = soup.find_all("meta", attrs={"name": "DC.Subject"})
     for metas, values in ((creator_metas, authors), (citation_authors, authors)):
         for meta, value in zip(metas, values): meta["content"] = value
-        for meta in metas[len(values):]: meta["content"] = ""
+        for meta in metas[len(values):]: meta.decompose()
     for meta in citation_affiliations:
         meta["content"] = "Fakultas Hukum, Universitas Prof. Hazairin, SH."
     for meta, keyword in zip(subject_metas, keywords): meta["content"] = keyword
@@ -91,8 +101,8 @@ if True:
     doi = soup.select_one(".list-group-item.doi")
     if doi:
         doi_link = doi.select_one("a.doi_link")
-        doi_link["href"] = url
-        doi_link.string = "https://doi.org/" + temporary_doi
+        doi_link["href"] = simulation_url
+        doi_link.string = simulation_url
     author_nodes = soup.select(".authors .author")
     for node in author_nodes[2:]: node.decompose()
     for node, name in zip(author_nodes, authors):
@@ -109,11 +119,20 @@ if True:
         span = soup.new_tag("span", attrs={"class": "keyword_item"}); span.string = keyword; keyword_box.append(span)
     galley = soup.select_one("a.galley-link.pdf"); galley["href"] = pdf_url
     statistic_values = soup.select(".article-sidebar .galley_list b")
-    for value in statistic_values[:2]: value.string = "2"
+    for value, key, initial in zip(statistic_values[:2], ['read', 'download'], ['10', '3']):
+        value.string = initial
+        value['data-vis-' + key] = ''
+    soup.body['data-vis-article'] = ''
+    soup.body.append(soup.new_tag('script', src='/assets/article-stats.js', defer=True))
     badge = soup.select_one(".dimension_badge")
     if badge: badge.decompose()
     citation = soup.select_one(".csl-entry")
-    if citation: citation.string = f"Anita, F., & Bintang, M. A. (2026). {title}. Jurnal Bina Mulia Hukum, 10(2), 166-178."
+    if citation: citation.string = f"Anita, F., & Bintang, M. A. (2026). {title}. Jurnal Bina Mulia Hukum, 10(2), 179-186."
+    for group in soup.select('.how-to-cite .btn-group'): group.decompose()
+    for link in soup.select('.citation_download a'):
+        format_name = 'ris' if '/ris?' in link.get('href', '') else 'bib'
+        link['href'] = f'/assets/citations/2534.{format_name}'
+        link['download'] = ''
     reference_box = soup.select_one("#articleCitations > div")
     if reference_box:
         reference_box.clear()
@@ -130,21 +149,30 @@ card = f'''\n<div class="article-summary media fitri-bintang-article">
   <div class="media-body article_summary">
     <h3 class="media-heading"><a href="{url}" class="article_name">{title}</a></h3>
     <div class="meta row">
-      <div class="col-md-12 col-xs-12 journal_index_doi"><span class="doi_logo"></span><a href="{url}" class="doi_link">{temporary_doi}</a></div>
+      <div class="col-md-12 col-xs-12 journal_index_doi"><span class="doi_logo"></span><a href="{simulation_url}" class="doi_link">{simulation_url.rsplit('/', 1)[-1]}</a></div>
       <div class="col-md-12 col-xs-12">
-        <span class="pull-left pages"><i class="fa fa-file-text-o" aria-hidden="true"></i> <span class="page_number">166-178</span></span>
+        <span class="pull-left pages"><i class="fa fa-file-text-o" aria-hidden="true"></i> <span class="page_number">179-186</span></span>
         <span class="pull-right author"><i class="fa fa-users"></i> Fitri Anita, Muhammad Amri Bintang</span>
       </div>
     </div>
     <div class="row">
       <div class="col-md-8 col-xs-12"><a class="galley-link pdf" href="{pdf_url}"><span class="gallery_item_link"><i class="fa fa-paperclip"></i> PDF</span></a></div>
-      <div class="col-md-4 col-xs-12 stat_counter"><span class="article_counter_read"></span> <span class="hidden-xs">Read: 2 | Download: 2</span></div>
+      <div class="col-md-4 col-xs-12 stat_counter"><span class="article_counter_read"></span> <span class="hidden-xs">Read: <span data-vis-read>10</span> | Download: <span data-vis-download>3</span></span></div>
     </div>
   </div>
 </div>\n'''
 for listing in [ROOT / "index.html", ROOT / "home.html", ROOT / "pages/issue/view/143.html"]:
     text = listing.read_text(encoding="utf-8")
     text = text.replace('/index.php/jbmh/article/view/fitri-bintang', url)
-    if "fitri-bintang-article" not in text:
-        text = text.replace('<div class="media-list">', '<div class="media-list">' + card, 1)
+    listing_soup = BeautifulSoup(text, "html.parser")
+    existing = listing_soup.select_one('.fitri-bintang-article')
+    if existing: existing.decompose()
+    next_article = listing_soup.select_one('a.article_name[href$="/article/view/2533"]')
+    if next_article:
+        next_article.find_parent('div', class_='article-summary').insert_before(BeautifulSoup(card, "html.parser"))
+    else:
+        listing_soup.select_one('.media-list').append(BeautifulSoup(card, "html.parser"))
+    text = str(listing_soup)
+    if '/assets/article-stats.js' not in text:
+        text = text.replace('</body>', '<script src="/assets/article-stats.js" defer></script></body>')
     listing.write_text(text, encoding="utf-8", newline="\n")

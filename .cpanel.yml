@@ -8,6 +8,7 @@ deployment:
     - /bin/cp home.html "$DEPLOYPATH"
     - /bin/cp search.html "$DEPLOYPATH"
     - /bin/cp pdf.php "$DEPLOYPATH"
+    - /bin/cp article-stats.php "$DEPLOYPATH"
     - /bin/cp journal2.html "$DEPLOYPATH"
     - /bin/cp journal.3.html "$DEPLOYPATH"
     - /bin/cp peerreviewprocess.html "$DEPLOYPATH"

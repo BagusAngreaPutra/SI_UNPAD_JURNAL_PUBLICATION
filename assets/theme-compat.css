@@ -4,7 +4,18 @@
 .user_navigation .nav > li > a:hover,
 .user_navigation .nav > li > a:focus { background: rgba(255,255,255,.12); }
 .site_header .navbar-nav > li > a { color: #111; }
-.site_header .search_input { margin-top: 14px; }
+/* Remove the heading margins that push the journal title below the menu. */
+.site_header .site-name { margin: 0; }
+@media (min-width: 768px) {
+  .site_header .site-name .navbar-brand {
+    height: 50px;
+    padding-top: 21px;
+    padding-bottom: 9px;
+    line-height: 20px;
+  }
+}
+.site_header .search_input { margin: 0; padding: 15px 0; }
+.site_header .search_input .btn { vertical-align: middle; }
 .journal_index .about_journal { background: rgba(101, 0, 0, .4); }
 .journal_index .about_journal h1 { color: #ff8080; }
 .pkp_structure_sidebar .pkp_block .title { display: block; width: 100%; height: auto; min-height: 46px; color: #fff; font-weight: 700; background: linear-gradient(135deg, #fa4b50 0%, #ee4548 52%, #a60000 100%); }

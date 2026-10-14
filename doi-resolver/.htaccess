@@ -1,0 +1,7 @@
+DirectoryIndex index.php
+Options -Indexes -MultiViews
+RewriteEngine On
+RewriteRule ^config\.php$ - [F,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ index.php [L,QSA]
